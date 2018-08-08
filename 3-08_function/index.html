@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>template</title>
+<link href="../../_common/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+<div class="header-contents">
+<h1>タイトル</h1>
+<h2>サブタイトル</h2>
+</div><!-- /.header-contents -->
+</header>
+<div class="main-wrapper">
+<section>
+	<p>コーヒーメーカーの価格は<span id="output1"></span>円(税込)です。</p>
+	<p>コーヒーフィルターの価格は<span id="output2"></span>円(税込)です。</p>
+	<p>コーヒー豆の価格は<span id="output3"></span>円(税込)です。</p>
+</section>
+</div><!-- /.main-wrapper -->
+<footer>JavaScript Samples</footer>
+<script>
+  const GetTotal = (price) =>{
+    const taxRate = 0.08;
+    return price * (1 + taxRate);
+  }
+
+  document.getElementById('output1').textContent = GetTotal(8000);
+  document.getElementById('output2').textContent = GetTotal(200);
+  document.getElementById('output3').textContent = GetTotal(1000);
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>template</title>
+<link href="../../_common/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+<div class="header-contents">
+<h1>タイトル</h1>
+<h2>サブタイトル</h2>
+</div><!-- /.header-contents -->
+</header>
+<div class="main-wrapper">
+<section>
+  <P>円周率は<span id="pi"></span>です。</P>
+  <p>普通に切り捨てると<span id="pi_floor"></span>です。</p>
+  <p>小数点第2位で切り捨てると<span id="pi_floor2"></span>です。</p>
+  <p>小数点第3位で切り捨てると<span id="pi_floor3"></span>です。</p>
+</section>
+</div><!-- /.main-wrapper -->
+<footer>JavaScript Samples</footer>
+<script>
+  const point = (num, digit) => {
+    const time = Math.pow(10, digit);
+    return Math.floor(num * time) /  time;
+  }
+
+  document.getElementById('pi').textContent= Math.PI;
+  document.getElementById('pi_floor').textContent = Math.floor(Math.PI);
+  document.getElementById('pi_floor2').textContent = point(Math.PI, 2);
+  document.getElementById('pi_floor3').textContent = point(Math.PI, 3);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+table {
+	border-collapse: collapse;
+}
+td {
+	padding: 4px 8px;
+  border: 1px solid #23628f;
+  text-align: center;
+}
+
+form label {
+  display: block;
+}
+
+form input[type=submit] {
+  margin-top: 10px;
+}

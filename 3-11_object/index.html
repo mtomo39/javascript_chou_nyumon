@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>template</title>
+<link href="../../_common/css/style.css" rel="stylesheet" type="text/css">
+<link href="./style.css" rel="stylesheet" type"text/css">
+</head>
+<body>
+<header>
+<div class="header-contents">
+<h1>タイトル</h1>
+<h2>サブタイトル</h2>
+</div><!-- /.header-contents -->
+</header>
+<div class="main-wrapper">
+<section>
+	<form id='inputForm' action="#">
+    <fieldset>
+      <legend>入力フォーム</legend>
+      <label>タイトル</label>
+      <input type="text" id="title">
+      <label>作者</label>
+      <input type="text" id="auther">
+      <label>価格</label>
+      <input type="text" id="price">
+      <label>在庫</label>
+      <input type="text" id="stock">
+  </fieldset>
+  <input type="submit" value="登録">
+</form>
+  <table id="list">
+    <tr>
+      <td>タイトル</td>
+      <td>作者</td>
+      <td>価格</td>
+      <td>在庫</td>
+      <td>登録日</td>
+    </tr>
+  </table>
+  </form>
+  <p>最終アクセス日時：<span id="time"></span></p>
+</section>
+</div><!-- /.main-wrapper -->
+<footer>JavaScript Samples</footer>
+<script src="script.js"></script>
+</body>
+</html>

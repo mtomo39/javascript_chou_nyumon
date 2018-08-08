@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>template</title>
+<link href="../../_common/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+<div class="header-contents">
+<h1>タイトル</h1>
+<h2>サブタイトル</h2>
+</div><!-- /.header-contents -->
+</header>
+<div class="main-wrapper">
+<section>
+	
+</section>
+</div><!-- /.main-wrapper -->
+<footer>JavaScript Samples</footer>
+<script>
+//  let answer = window.prompt('ヘルプを見ますか？');
+  const answer = window.prompt('ヘルプを見ますか？');
+/*   console.log(answer);
+  answer = 'no';
+  console.log(answer);
+ */
+/*   if (answer === 'yes'){
+//    console.log('タップでジャンプ、障害物を避けます。');
+    window.alert('タップでジャンプ、障害物を避けます。');
+  }else if(answer === 'no'){
+    window.alert('ゲームを起動中...');
+  }else{
+    window.alert('yesかnoでお答えください。');
+  }
+ */
+  switch(answer){
+    case 'yes':
+      window.alert('タップでジャンプ、障害物を避けます。');
+      break;
+    case 'no':
+      window.alert('ゲームを起動中...');
+      break;
+    default:
+      window.alert('yesかnoでお答えください。');
+  }
+</script>
+</body>
+</html>

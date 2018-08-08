@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>template</title>
+<link href="../../_common/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+<div class="header-contents">
+<h1>タイトル</h1>
+<h2>サブタイトル</h2>
+</div><!-- /.header-contents -->
+</header>
+<div class="main-wrapper">
+<section>
+	<ol id="fizzbuzz">
+  </ol>
+</section>
+</div><!-- /.main-wrapper -->
+<footer>JavaScript Samples</footer>
+<script>
+  const fizzBuzz = (num) =>{
+    let out = '';
+
+    if (num % 3 === 0 ){
+      out += 'fizz';
+    }
+    if (num % 5 === 0){
+      out += 'buzz';
+    }
+    if (out === ''){
+      out = num;
+    }
+    return out;
+  }
+
+  for (i = 1; i <= 30; i++){
+    let listItem = document.createElement('li');
+    listItem.textContent = fizzBuzz(i);
+
+    document.getElementById('fizzbuzz').appendChild(listItem);
+  }
+</script>
+</body>
+</html>

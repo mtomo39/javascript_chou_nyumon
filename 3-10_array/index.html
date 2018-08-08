@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>template</title>
+<link href="../../_common/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+<div class="header-contents">
+<h1>タイトル</h1>
+<h2>サブタイトル</h2>
+</div><!-- /.header-contents -->
+</header>
+<div class="main-wrapper">
+<section>
+  <h3>やることリスト</h3>
+    <ul id = 'todoList'></ul>
+</section>
+</div><!-- /.main-wrapper -->
+<footer>JavaScript Samples</footer>
+<script>
+  const todos = ['デザインカンプ作成'
+                ,'データ整備'
+                ,'勉強会申し込み'
+                ,'牛乳買う'
+                ,'歯医者に行く'];
+  
+  todos.push('マッサージ');
+
+  for(todo of todos){
+    console.log(todo);
+    let li = document.createElement('li');
+    li.textContent = todo;
+    document.getElementById('todoList').appendChild(li);
+  }
+</script>
+</body>
+</html>
