@@ -1,0 +1,13 @@
+.submenu h3{
+  margin: 0 0 lem 0;
+  font-style: 16px;
+  cursor: pointer;
+  color: #5e78c1;
+}
+.submenu h3:hover{
+  color: #b04188;
+  text-decoration: underline;
+}
+.hidden{
+  display: none;
+}
